@@ -1,3 +1,108 @@
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dfdfe3;
+  border-radius: 5px;
+}
+
+.search-box {
+  border: 1.5px solid #858585;
+  margin: 5px 10px auto;
+  padding: 10px 30px;
+  font-size: 14px;
+  text-align: center;
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  background-color: #e3f6fa;
+  color: #858585;
+}
+
+.search-button {
+  border: none;
+  font-size: 16px;
+  background-color: white;
+  color: #858585;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search-button:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.current-date-time {
+  font-size: 12px;
+}
+
+.current-temperature {
+  font-size: 42px;
+}
+
+.current-celsius-temp {
+  font-size: 16px;
+  vertical-align: 20px;
+  margin-left: 2px;
+  font-weight: 900;
+  margin-top: 3px;
+}
+
+.current-farenheit-temp {
+  font-size: 16px;
+  vertical-align: 20px;
+  margin-left: 2px;
+  font-weight: 900;
+  margin-top: 3px;
+}
+
+.current-conditions {
+  padding-top: 40px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.current-wind-speed {
+  font-size: 18px;
+  padding-left: 50px;
+  padding-top: 3px;
+}
+
+.current-rain-chance {
+  font-size: 18px;
+  padding-left: 50px;
+  padding-top: 3px;
+}
+
+.three-day-forecast {
+  background-color: #dcedf0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.spacing {
+  padding-top: 50px;
+}
+h1 {
+  font-size: 42px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 27px;
+}
+
+.footnote {
+  font-size: 10px;
+  padding-top: 3px;
+  color: #adadaf;
+}
+
 li {
   list-style-type: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
