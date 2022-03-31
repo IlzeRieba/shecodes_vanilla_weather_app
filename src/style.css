@@ -1,9 +1,27 @@
-.weather-app {
+h1 {
+  font-size: 42px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 27px;
+}
+
+li {
+  list-style-type: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+}
+
+.weather-app {
   padding: 20px;
   border: 1px solid #dfdfe3;
   border-radius: 5px;
+  background-image: url(/Users/ilzerieba/Desktop/Coding/Git/shecodes_vanilla_weather_app/files/weather-app-backround-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .search-box {
@@ -18,14 +36,13 @@
   margin-left: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 20px;
-  background-color: #e3f6fa;
   color: #858585;
 }
 
 .search-button {
   border: none;
   font-size: 16px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   color: #858585;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -79,21 +96,17 @@
 }
 
 .three-day-forecast {
-  background-color: #dcedf0;
+  background-color: white;
   padding-bottom: 15px;
-  padding-top: 15px;
+  padding-top: 5px;
   text-align: center;
   vertical-align: middle;
   font-size: 14px;
+  margin: 0px;
 }
 
 .spacing {
-  padding-top: 50px;
-}
-h1 {
-  font-size: 42px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 27px;
+  padding-top: 70px;
 }
 
 .footnote {
@@ -102,7 +115,8 @@ h1 {
   color: #adadaf;
 }
 
-li {
-  list-style-type: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.forecast-icon {
+  position: relative;
+  left: -50px;
+  top: 40px;
 }

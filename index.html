@@ -15,6 +15,8 @@
      <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
+    <div class="weather-app-wrapper">
+
     <div class="container">
       <div class="weather-app">
         <form>
@@ -33,9 +35,9 @@
           </div>
           <div class="col-6">
             <ul>
-              <li class="current-conditions">Sunny</li>
-              <li class="current-wind-speed">15mph</li>
-              <li class="current-rain-chance">0%</li>
+              <li class="current-conditions"> <img src="/Users/ilzerieba/Desktop/Coding/Git/shecodes_vanilla_weather_app/files/day-sunny.png" alt="sunny" width="20px 20px"> Sunny</li>
+              <li class="current-wind-speed"><img src="/Users/ilzerieba/Desktop/Coding/Git/shecodes_vanilla_weather_app/files/wind.png" alt="windspeed" width="20px 20px">15mph</li>
+              <li class="current-rain-chance"><img src="/Users/ilzerieba/Desktop/Coding/Git/shecodes_vanilla_weather_app/files/water.png" alt="rain" width="20px 20px"> 0%</li>
             </ul>
           </div>
 
@@ -45,25 +47,30 @@
 
       <div class="three-day-forecast">
         <div class="row">
-          <div class="col-4">
-            <ul>
-              <li>☼</li>
+ <div class="col-4">
+     <span class="forecast-icon">
+ <img src="/Users/ilzerieba/Desktop/Coding/Git/shecodes_vanilla_weather_app/files/day-sunny.png" alt="cloudy" width="35px 35px">
+              </span>
               <li>Sat</li>
-              <li>17℃</li>
-              <li>62℉</li>
+              <li>16℃</li>
+              <li>60℉</li>
             </ul>
-          </div>
+ </div>
           <div class="col-4">
-            <ul>
-              <li>☁️</li>
+     <span class="forecast-icon">
+ <img src="/Users/ilzerieba/Desktop/Coding/Git/shecodes_vanilla_weather_app/files/day-sunny.png" alt="cloudy" width="35px 35px">
+              </span>
               <li>Sun</li>
               <li>16℃</li>
               <li>60℉</li>
             </ul>
-          </div>
+ </div>
           <div class="col-4">
             <ul>
-              <li>🌧</li>
+                <span class="forecast-icon">
+  <img src="/Users/ilzerieba/Desktop/Coding/Git/shecodes_vanilla_weather_app/files/cloud-rain.png" alt="rain" width="35px 35px">
+ </span>  
+             
               <li>Mon</li>
               <li>13℃</li>
               <li>55℉</li>
@@ -72,15 +79,17 @@
         </div>
       </div>
     </div>
-    <div class="footnote">
+
+    </div>
+    
+      <div class="footnote">
 <small>
       <a href="https://majestic-unicorn-56669b.netlify.app/" target="_blank">
         Open source code
       </a>
       by Ilze Rieba
     </small>
-    </div>
-    
+     </div>
     <script src="src/app.js"></script>
   </body>
 </html>
