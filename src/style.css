@@ -7,6 +7,11 @@ h1 {
 li {
   list-style-type: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+
+strong {
+  font-size: 42px;
 }
 
 .weather-app-wrapper {
@@ -57,15 +62,11 @@ li {
   font-size: 12px;
 }
 
-.current-temperature {
-  font-size: 42px;
-}
-
 .current-celsius-temp {
   font-size: 16px;
   vertical-align: 20px;
   margin-left: 2px;
-  font-weight: 900;
+  font-weight: 600;
   margin-top: 3px;
 }
 
@@ -73,26 +74,15 @@ li {
   font-size: 16px;
   vertical-align: 20px;
   margin-left: 2px;
-  font-weight: 900;
+  font-weight: 600;
   margin-top: 3px;
 }
 
 .current-conditions {
-  padding-top: 40px;
+  padding-top: 70px;
   padding-left: 50px;
-  font-size: 18px;
-}
-
-.current-wind-speed {
-  font-size: 18px;
-  padding-left: 50px;
-  padding-top: 3px;
-}
-
-.current-rain-chance {
-  font-size: 18px;
-  padding-left: 50px;
-  padding-top: 3px;
+  font-size: 14px;
+  color: #424242;
 }
 
 .three-day-forecast {
