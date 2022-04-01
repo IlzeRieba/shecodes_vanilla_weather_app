@@ -55,7 +55,17 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function displayFahreinheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (15 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
 search("Ericeira");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahreinheitTemperature);
