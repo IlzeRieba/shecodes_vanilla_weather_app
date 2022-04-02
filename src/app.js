@@ -30,6 +30,8 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
+  celsiusTemperature = response.data.main.temp;
+
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   windElement.innerHTML = Math.round(response.data.wind.speed);
@@ -57,15 +59,32 @@ function handleSubmit(event) {
 
 function displayFahreinheitTemperature(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (15 * 9) / 5 + 32;
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#current-temperature");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-search("Ericeira");
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahreinheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+search("Ericeira");

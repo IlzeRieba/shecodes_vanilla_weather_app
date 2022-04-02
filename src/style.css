@@ -121,3 +121,12 @@ strong {
   font-size: 18px;
   font-weight: 900px;
 }
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+}
