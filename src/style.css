@@ -66,6 +66,7 @@ strong {
 }
 
 .current-icon {
+  filter: grayscale(30%);
   vertical-align: top;
 }
 
