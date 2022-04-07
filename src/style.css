@@ -98,16 +98,15 @@ strong {
   background-color: white;
   text-align: center;
   font-size: 12px;
+  margin-top: -60px;
 }
 
 .spacing {
   padding-top: 50px;
 }
 
-.footnote {
-  font-size: 10px;
-  padding-top: 3px;
-  color: #adadaf;
+.weather-forecast-day {
+  font-weight: bold;
 }
 
 .weather-forecast-temperature-max {
@@ -121,8 +120,7 @@ strong {
 
 .forecast-icon {
   position: relative;
-  left: -50px;
-  top: 60px;
+  left: -10px;
 }
 
 .active {
@@ -133,4 +131,10 @@ strong {
 
 .active:hover {
   text-decoration: none;
+}
+
+.footnote {
+  font-size: 10px;
+  padding-top: 3px;
+  color: #adadaf;
 }
