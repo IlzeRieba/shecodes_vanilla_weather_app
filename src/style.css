@@ -24,6 +24,7 @@ strong {
 
 .weather-app {
   padding: 20px;
+
   border: 1px solid #dfdfe3;
   border-radius: 5px;
   background-image: url(/Users/ilzerieba/Desktop/Coding/Git/shecodes_vanilla_weather_app/files/app_background.JPG);
@@ -93,14 +94,10 @@ strong {
   color: #424242;
 }
 
-.three-day-forecast {
+.weather-forecast {
   background-color: white;
-  padding-bottom: 5px;
-  padding-top: 5px;
   text-align: center;
-  vertical-align: middle;
   font-size: 12px;
-  margin: 0px;
 }
 
 .spacing {
@@ -113,15 +110,21 @@ strong {
   color: #adadaf;
 }
 
+.weather-forecast-temperature-max {
+  font-weight: 500;
+}
+
+.weather-forecast-temperature-min {
+  font-weight: 500;
+  color: #858585;
+}
+
 .forecast-icon {
   position: relative;
   left: -50px;
   top: 60px;
 }
-.forecast-day-styling {
-  font-size: 18px;
-  font-weight: 900px;
-}
+
 .active {
   color: black;
   cursor: default;
