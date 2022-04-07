@@ -21,6 +21,42 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+
+  let days = ["Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+ <div class="col-3">
+ <span class="forecast-icon">
+               <img src="http://openweathermap.org/img/wn/10d@2x.png" 
+  alt="" 
+  width="70px 70px">
+</span>
+
+  <ul class="weather-forecast-details">
+    <li class="weather-forecast-day">
+      ${day}
+      <div class="weather-forecast-temperature-max">
+        18℃
+            </div>
+      <div class="weather-forecast-temperature-min">
+        12℃
+      </div>
+    </li>
+  </ul>
+        </div>
+      `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#city");
@@ -88,3 +124,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Ericeira");
+displayForecast();
