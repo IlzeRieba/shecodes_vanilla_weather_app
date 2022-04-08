@@ -24,7 +24,6 @@ strong {
 
 .weather-app {
   padding: 20px;
-
   border: 1px solid #dfdfe3;
   border-radius: 5px;
   background-image: url(/Users/ilzerieba/Desktop/Coding/Git/shecodes_vanilla_weather_app/files/app_background.JPG);
@@ -72,14 +71,6 @@ strong {
 }
 
 .current-celsius-temp {
-  font-size: 16px;
-  vertical-align: 20px;
-  margin-left: 2px;
-  font-weight: 600;
-  margin-top: 3px;
-}
-
-.current-farenheit-temp {
   font-size: 16px;
   vertical-align: 20px;
   margin-left: 2px;
